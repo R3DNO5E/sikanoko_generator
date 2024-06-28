@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '21.x'
+      - run: npm install
       - run: npm run build
   deploy:
     runs-on: ubuntu-latest
